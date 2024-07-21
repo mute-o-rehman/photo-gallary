@@ -1,12 +1,11 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "outDir": "./dist/out-tsc/server",
-    "target": "es2016",
-    "module": "commonjs",
-    "types": ["node"]
+    "outDir": "./out-tsc/server",
+    "target": "es2020",
+    "types": ["node", "express"]
   },
-  "files": ["src/main.server.ts"],
+  "files": ["src/main.server.ts", "server.ts"],
   "angularCompilerOptions": {
     "entryModule": "./src/app/app.server.module#AppServerModule"
   }
