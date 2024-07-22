@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:ssr": "ng build && ng run photo-gallary:server",
-    "serve:ssr": "node dist/photo-gallary/server/main.js",
+    "serve:ssr": "node --inspect dist/photo-gallary/server/main.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:netlify": "npm run build:ssr && cp ssr.js netlify/functions/"
